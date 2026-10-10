@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North London School of Motoring | Professional Driving Lessons & Test Hire</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Inter & Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',
+                            dark: '#081226',
+                            blue: '#2563eb',
+                            lightBlue: '#3b82f6',
+                            accent: '#38bdf8',
+                            light: '#f8fafc',
+                            cardBg: '#ffffff'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(12px);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(8, 18, 38, 0.90) 100%), 
+                        url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+        .accent-gradient-hover:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <div class="bg-brand-navy text-slate-300 text-xs py-2 px-4 border-b border-slate-800 hidden sm:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="tel:07904929167" class="hover:text-white transition font-medium"><i class="fa-solid fa-phone text-brand-blue mr-2"></i>07904 929 167</a>
+                <a href="mailto:northlondonschoolofmotoring@gmail.com" class="hover:text-white transition text-slate-300"><i class="fa-solid fa-envelope text-brand-blue mr-2"></i>northlondonschoolofmotoring@gmail.com</a>
+                <span class="text-slate-300"><i class="fa-solid fa-car text-brand-blue mr-2"></i>Dual-Control Manual & Automatic Vehicles</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Rate: £40 / Hour (Mandatory 2-Hour Minimum)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-800 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Pure Typography Brand Logo - Justified & Equal Width -->
+                <a href="#home" class="flex flex-col group py-2 whitespace-nowrap shrink-0">
+                    <span class="font-heading font-extrabold text-xl sm:text-2xl text-white tracking-tight leading-none group-hover:text-brand-accent transition-colors">
+                        North London
+                    </span>
+                    <span class="font-sans font-extrabold text-[10.5px] sm:text-[12.5px] text-brand-accent uppercase mt-1 leading-none tracking-[0.25em] flex justify-between">
+                        <span>S</span><span>C</span><span>H</span><span>O</span><span>O</span><span>L</span><span>&nbsp;</span><span>O</span><span>F</span><span>&nbsp;</span><span>M</span><span>O</span><span>T</span><span>O</span><span>R</span><span>I</span><span>N</span><span>G</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Nav Links - Evenly Spaced Without Wrapping -->
+                <nav class="hidden lg:flex items-center space-x-3 xl:space-x-6 text-sm font-medium">
+                    <a href="#home" class="px-2.5 py-2 rounded-lg text-slate-100 hover:text-white hover:bg-slate-800/60 transition whitespace-nowrap">Home</a>
+                    <a href="#about" class="px-2.5 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition whitespace-nowrap">About</a>
+                    <a href="#coverage" class="px-2.5 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition whitespace-nowrap">Areas Covered</a>
+                    <a href="#test-hire" class="px-2.5 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition whitespace-nowrap">Test Escort & Hire</a>
+                    <a href="#contact" class="px-2.5 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition whitespace-nowrap">Contact</a>
+                </nav>
+
+                <!-- Action CTAs -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://wa.me/447904929167" target="_blank" class="px-4 py-2.5 rounded-xl text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-500 transition shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl text-sm font-semibold accent-gradient text-white hover:shadow-lg transition">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobileMenuBtn" class="text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-800 bg-brand-navy px-4 pt-3 pb-6 space-y-2">
+            <a href="#home" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Home</a>
+            <a href="#about" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800">About Instructor</a>
+            <a href="#coverage" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800">Areas Covered</a>
+            <a href="#test-hire" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800">Test Escort & Car Hire</a>
+            <a href="#contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800">Contact / Book</a>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="https://wa.me/447904929167" target="_blank" class="w-full text-center py-3 rounded-xl font-semibold bg-emerald-600 text-white flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+                <a href="tel:07904929167" class="w-full text-center py-3 rounded-xl font-semibold bg-slate-800 text-white flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-brand-blue"></i>
+                    <span>Call 07904 929 167</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative hero-bg text-white pt-14 pb-24 md:pt-24 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-tight">
+                        Professional Driving Instruction in <span class="text-brand-accent">North London</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Patient and professional driving lessons operated by a trainee instructor at <strong class="text-white font-semibold">£40/hour</strong> (mandatory 2-hour minimum per session). Local pickup across <strong class="text-white font-semibold">Edmonton, Enfield, Wood Green, and Tottenham</strong>, with practical test day support across Greater London.
+                    </p>
+
+                    <!-- Feature Pills Bar -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 pt-1">
+                        <span class="bg-slate-900/90 border border-slate-700/80 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-brand-accent flex items-center gap-1.5">
+                            <i class="fa-solid fa-sterling-sign"></i> £40 / Hr (£80 Min 2-Hour Lesson)
+                        </span>
+                        <span class="bg-slate-900/90 border border-slate-700/80 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+                            <i class="fa-solid fa-car"></i> Manual & Automatic Dual-Control
+                        </span>
+                        <span class="bg-slate-900/90 border border-slate-700/80 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-blue-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-map-location-dot"></i> Greater London Tests
+                        </span>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl font-bold text-white accent-gradient shadow-xl hover:scale-[1.02] transition-transform text-center flex items-center justify-center gap-2">
+                            <span>Book Lesson Online</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="tel:07904929167" class="px-8 py-4 rounded-xl font-bold text-white bg-slate-900/80 border border-slate-700 hover:bg-slate-800 transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <span>Call 07904 929 167</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column / Quick Availability Callback Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-navy/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-slate-700/80 shadow-2xl relative">
+                        <div class="absolute -top-3 right-6 bg-brand-blue text-white font-bold text-xs uppercase px-3 py-1 rounded-full shadow">
+                            Fast Callback
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Check Availability</h3>
+                        <p class="text-slate-400 text-xs mb-5">Fill in your details for a fast response on lesson slots</p>
+
+                        <div data-fs-success class="hidden p-4 mb-4 text-sm text-emerald-400 bg-emerald-950/50 border border-emerald-800 rounded-lg">
+                            Thank you! Your enquiry has been sent successfully to northlondonschoolofmotoring@gmail.com.
+                        </div>
+                        <div data-fs-error class="hidden p-4 mb-4 text-sm text-red-400 bg-red-950/50 border border-red-800 rounded-lg"></div>
+
+                        <form id="quick-form" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Your Name *</label>
+                                <input type="text" name="name" required data-fs-field placeholder="e.g. Alex Morgan" class="w-full bg-slate-800/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-blue transition">
+                                <span data-fs-error="name" class="text-xs text-red-400 mt-1 block"></span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Phone *</label>
+                                    <input type="tel" name="phone" required data-fs-field placeholder="07904 929 167" class="w-full bg-slate-800/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-blue transition">
+                                    <span data-fs-error="phone" class="text-xs text-red-400 mt-1 block"></span>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Pickup Area</label>
+                                    <select name="pickup_area" data-fs-field class="w-full bg-slate-800/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-blue transition">
+                                        <option value="Edmonton">Edmonton (N18/N9)</option>
+                                        <option value="Enfield">Enfield (EN1/2/3)</option>
+                                        <option value="Wood Green">Wood Green (N22)</option>
+                                        <option value="Tottenham">Tottenham (N15/N17)</option>
+                                        <option value="Other London">Other London Area</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Message</label>
+                                <textarea name="message" data-fs-field rows="3" placeholder="Preferred dates, times, or driving experience..." class="w-full bg-slate-800/90 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-blue transition resize-none"></textarea>
+                                <span data-fs-error="message" class="text-xs text-red-400 mt-1 block"></span>
+                            </div>
+                            <button type="submit" data-fs-submit-btn class="w-full py-3.5 rounded-xl font-bold text-white accent-gradient hover:shadow-lg transition">
+                                Request Availability
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800&auto=format&fit=crop" alt="Dual-Control Tuition Car" class="w-full h-80 sm:h-96 object-cover opacity-95">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 text-white">
+                            <span class="bg-brand-blue text-xs font-bold px-2.5 py-1 rounded uppercase tracking-wider">Tuition Vehicle</span>
+                            <h4 class="text-xl font-heading font-bold mt-2">Manual & Automatic Options</h4>
+                            <p class="text-xs text-slate-300">Modern dual-control vehicles with exceptional visibility and easy handling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-brand-blue font-bold uppercase tracking-wider text-xs">About The Instructor</span>
+                        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 mt-1">
+                            Patient, Structured Instruction Across North London
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Welcome to <strong class="text-slate-900">North London School of Motoring</strong>. Operated by a dedicated trainee driving instructor, every lesson is structured to build your confidence step-by-step in a relaxed, supportive environment.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Lessons are conducted in our dual-control <strong class="text-slate-900">manual and automatic tuition vehicles</strong>, ideal for mastering clutch control, junctions, roundabouts, and precise parallel parking. Whether you are starting from scratch or refining your skills for an upcoming test, we cover all local routes in Edmonton, Enfield, Wood Green, and Tottenham.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                            <div class="w-9 h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-car-side"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Dual Controls</h4>
+                                <p class="text-xs text-slate-500">Manual & automatic vehicles equipped with dual controls for complete safety.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                            <div class="w-9 h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Test Route Mastery</h4>
+                                <p class="text-xs text-slate-500">Thorough preparation for Wood Green, Enfield, and regional test centres.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                            <div class="w-9 h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-sterling-sign"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Transparent Pricing</h4>
+                                <p class="text-xs text-slate-500">Flat rate of £40/hr with mandatory 2-hour minimum per lesson (£80).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                            <div class="w-9 h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-house-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Door-to-Door Pickup</h4>
+                                <p class="text-xs text-slate-500">Convenient pickup from your home, college, or workplace.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="coverage" class="py-20 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent font-bold uppercase tracking-wider text-xs">Coverage Details</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">
+                    Areas Covered & Test Centers
+                </h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">
+                    Door-to-door lesson pickups across North London postcodes and test escort across Greater London.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-brand-blue flex items-center justify-center font-bold text-lg mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-1">Edmonton</h3>
+                    <div class="text-xs text-brand-blue font-semibold mb-2">N18 & N9 Postcodes</div>
+                    <p class="text-xs text-slate-400">Lower Edmonton, Upper Edmonton, Edmonton Green, Silver Street area.</p>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-brand-blue flex items-center justify-center font-bold text-lg mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-1">Enfield</h3>
+                    <div class="text-xs text-brand-blue font-semibold mb-2">EN1, EN2, EN3 Postcodes</div>
+                    <p class="text-xs text-slate-400">Enfield Town, Ponders End, Enfield Highway, Bush Hill Park.</p>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-brand-blue flex items-center justify-center font-bold text-lg mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-1">Wood Green</h3>
+                    <div class="text-xs text-brand-blue font-semibold mb-2">N22 Postcode</div>
+                    <p class="text-xs text-slate-400">Wood Green High Road, Turnpike Lane, Alexandra Palace, Noel Park.</p>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-brand-blue flex items-center justify-center font-bold text-lg mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-1">Tottenham</h3>
+                    <div class="text-xs text-brand-blue font-semibold mb-2">N15 & N17 Postcodes</div>
+                    <p class="text-xs text-slate-400">South Tottenham, Tottenham Hale, Seven Sisters, Bruce Grove.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="test-hire" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-blue font-bold uppercase tracking-wider text-xs">Practical Exam Support</span>
+                    <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">
+                        Test Day Escort & Car Hire in Greater London
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Feeling nervous about your practical driving test? We provide a complete test escort and vehicle hire service across Greater London test centers. 
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                            <span>Pre-test warm-up lesson to calm nerves and practice maneuvers</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                            <span>Use of our dual-control manual or automatic vehicle for your exam</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                            <span>Full escort to test centres across Wood Green, Enfield, Chingford, Hendon, and more</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-6 bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">Book Test Day Hire</h3>
+                    <p class="text-xs text-slate-500 mb-6">Contact us with your test date, time, and test centre location.</p>
+                    <div class="space-y-4">
+                        <a href="tel:07904929167" class="flex items-center justify-between p-4 bg-white rounded-xl border border-slate-200 font-bold text-slate-900 hover:border-brand-blue transition">
+                            <span>Call to Check Test Slot Availability</span>
+                            <i class="fa-solid fa-phone text-brand-blue"></i>
+                        </a>
+                        <a href="https://wa.me/447904929167" target="_blank" class="flex items-center justify-between p-4 bg-emerald-50 rounded-xl border border-emerald-200 font-bold text-emerald-900 hover:border-emerald-500 transition">
+                            <span>WhatsApp Test Escort Enquiry</span>
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-brand-blue font-bold uppercase tracking-wider text-xs">Direct Contact</span>
+                        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900 mt-1">
+                            Send Us a Message
+                        </h2>
+                        <p class="text-slate-600 mt-3 text-sm">
+                            Ready to schedule your lessons? Fill in your details below or reach out directly by phone, email, or WhatsApp.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <a href="tel:07904929167" class="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">Direct Phone Line</div>
+                                <div class="text-base font-bold text-slate-900">07904 929 167</div>
+                            </div>
+                        </a>
+
+                        <a href="mailto:northlondonschoolofmotoring@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-xs text-slate-500 font-medium">Email Enquiries</div>
+                                <div class="text-sm font-bold text-slate-900 truncate">northlondonschoolofmotoring@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/447904929167" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">WhatsApp Message</div>
+                                <div class="text-base font-bold text-slate-900">Chat 07904 929 167</div>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-sterling-sign"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">Standard Rate</div>
+                                <div class="text-base font-bold text-slate-900">£40 / Hour (Min 2-hr lesson)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-1">Booking & Enquiry Form</h3>
+                        <p class="text-xs text-slate-500 mb-6">Submitted directly to northlondonschoolofmotoring@gmail.com</p>
+
+                        <div data-fs-success class="hidden p-4 mb-6 text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg">
+                            Thank you! Your message has been successfully sent. We will get back to you shortly.
+                        </div>
+                        <div data-fs-error class="hidden p-4 mb-6 text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg"></div>
+
+                        <form id="contact-form" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Name *</label>
+                                    <input type="text" name="name" required data-fs-field placeholder="Your full name" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <span data-fs-error="name" class="text-xs text-red-600 mt-1 block"></span>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone *</label>
+                                    <input type="tel" name="phone" required data-fs-field placeholder="07904 929 167" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <span data-fs-error="phone" class="text-xs text-red-600 mt-1 block"></span>
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email *</label>
+                                    <input type="email" name="email" required data-fs-field placeholder="your.email@example.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <span data-fs-error="email" class="text-xs text-red-600 mt-1 block"></span>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Pickup Postcode / Area *</label>
+                                    <input type="text" name="pickup_postcode" required data-fs-field placeholder="e.g. Edmonton N18" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <span data-fs-error="pickup_postcode" class="text-xs text-red-600 mt-1 block"></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Message *</label>
+                                <textarea name="message" required data-fs-field rows="4" placeholder="Let us know your availability, experience level, or test date..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-blue"></textarea>
+                                <span data-fs-error="message" class="text-xs text-red-600 mt-1 block"></span>
+                            </div>
+
+                            <button type="submit" data-fs-submit-btn class="w-full py-4 rounded-xl font-bold text-white accent-gradient text-base shadow-xl hover:shadow-blue-600/30 transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-navy text-slate-400 pt-16 pb-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <div class="space-y-4">
+                    <!-- Clean Text Footer Brand - Justified Equal Width -->
+                    <a href="#home" class="flex flex-col group max-w-[220px]">
+                        <span class="font-heading font-black text-2xl text-white tracking-tight leading-none group-hover:text-brand-accent transition-colors">
+                            North London
+                        </span>
+                        <span class="font-sans font-extrabold text-[12.5px] text-brand-accent uppercase mt-1 leading-none tracking-[0.25em] flex justify-between">
+                            <span>S</span><span>C</span><span>H</span><span>O</span><span>O</span><span>L</span><span>&nbsp;</span><span>O</span><span>F</span><span>&nbsp;</span><span>M</span><span>O</span><span>T</span><span>O</span><span>R</span><span>I</span><span>N</span><span>G</span>
+                        </span>
+                    </a>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Professional driving instruction across Edmonton, Enfield, Wood Green, and Tottenham at £40/hr. Greater London test escort services in our manual and automatic dual-control cars.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Instructor</a></li>
+                        <li><a href="#coverage" class="hover:text-white transition">Areas Covered</a></li>
+                        <li><a href="#test-hire" class="hover:text-white transition">Test Escort & Hire</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Form</a></li>
+                        <li><button onclick="openModal('privacyModal')" class="hover:text-white transition text-left cursor-pointer">Privacy Policy</button></li>
+                        <li><button onclick="openModal('termsModal')" class="hover:text-white transition text-left cursor-pointer">Terms & Conditions</button></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Coverage</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><i class="fa-solid fa-angle-right text-brand-blue mr-1"></i> Edmonton (N18, N9)</li>
+                        <li><i class="fa-solid fa-angle-right text-brand-blue mr-1"></i> Enfield (EN1, EN2, EN3)</li>
+                        <li><i class="fa-solid fa-angle-right text-brand-blue mr-1"></i> Wood Green (N22)</li>
+                        <li><i class="fa-solid fa-angle-right text-brand-blue mr-1"></i> Tottenham (N15, N17)</li>
+                        <li><i class="fa-solid fa-angle-right text-brand-blue mr-1"></i> Greater London Test Centres</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Contact Info</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-brand-blue"></i>
+                            <a href="tel:07904929167" class="text-white font-semibold hover:underline">07904 929 167</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-brand-blue"></i>
+                            <a href="mailto:northlondonschoolofmotoring@gmail.com" class="hover:underline text-slate-300 truncate">northlondonschoolofmotoring@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <a href="https://wa.me/447904929167" target="_blank" class="hover:underline">WhatsApp Message</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-sterling-sign text-brand-blue"></i>
+                            <span>Rate: £40 / Hour</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 North London School of Motoring. All rights reserved.</p>
+                <p>Professional Driving Tuition & Test Escort</p>
+            </div>
+            
+            <!-- Discreet Legal Notice -->
+            <div class="mt-4 pt-4 border-t border-slate-800/60 text-center text-[11px] text-slate-500">
+                <p>North London School of Motoring is a trading name of <strong>Abukar Ahmed</strong> (Sole Trader).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-700 text-slate-200 rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl my-auto">
+            <div class="p-6 border-b border-slate-800 flex justify-between items-center shrink-0">
+                <h3 class="text-xl font-heading font-bold text-white">Privacy Policy</h3>
+                <button onclick="closeModal('privacyModal')" class="text-slate-400 hover:text-white text-xl p-1 rounded-lg focus:outline-none">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed text-slate-300">
+                <p><strong>Last Updated:</strong> March 2026</p>
+                <p>This Privacy Policy outlines how <strong>Abukar Ahmed trading as North London School of Motoring</strong> ("we", "our", or "us") collects, uses, and protects your personal information when you use our website or services.</p>
+                
+                <h4 class="font-bold text-white text-base pt-2">1. Information We Collect</h4>
+                <p>When you fill out our availability or contact booking forms, we may collect:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Full Name</li>
+                    <li>Contact Number & Email Address</li>
+                    <li>Pickup Location & Postcode</li>
+                    <li>Driving experience level & test preferences</li>
+                </ul>
+
+                <h4 class="font-bold text-white text-base pt-2">2. How We Use Your Information</h4>
+                <p>Your details are strictly used to organize driving lessons, communicate schedule changes, arrange test day hire, and process booking enquiries via Formspree. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+
+                <h4 class="font-bold text-white text-base pt-2">3. Data Security & Storage</h4>
+                <p>We implement reasonable physical and digital safeguards to protect your personal data from unauthorized access, alteration, or disclosure.</p>
+
+                <h4 class="font-bold text-white text-base pt-2">4. Your Rights</h4>
+                <p>You have the right to request access to, correction of, or deletion of your personal data at any time by contacting us directly at <a href="mailto:northlondonschoolofmotoring@gmail.com" class="text-brand-accent hover:underline">northlondonschoolofmotoring@gmail.com</a>.</p>
+            </div>
+            <div class="p-4 border-t border-slate-800 flex justify-end shrink-0">
+                <button onclick="closeModal('privacyModal')" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl text-sm transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="termsModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-700 text-slate-200 rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl my-auto">
+            <div class="p-6 border-b border-slate-800 flex justify-between items-center shrink-0">
+                <h3 class="text-xl font-heading font-bold text-white">Terms & Conditions</h3>
+                <button onclick="closeModal('termsModal')" class="text-slate-400 hover:text-white text-xl p-1 rounded-lg focus:outline-none">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed text-slate-300">
+                <p><strong>Legal Structure:</strong> North London School of Motoring is a trading name of <strong>Abukar Ahmed (Sole Trader)</strong>.</p>
+                
+                <h4 class="font-bold text-white text-base pt-2">1. Lesson Pricing & Structure</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>The standard tuition rate is <strong>£40 per hour</strong>.</li>
+                    <li>Lessons are structured with a mandatory <strong>2-hour minimum duration</strong> per session (£80 total per lesson slot).</li>
+                </ul>
+
+                <h4 class="font-bold text-white text-base pt-2">2. Cancellations & Rescheduling</h4>
+                <p>Students must provide a minimum of 48 hours notice to cancel or reschedule a driving lesson without penalty. Cancellations made with less than 48 hours notice may be charged in full.</p>
+
+                <h4 class="font-bold text-white text-base pt-2">3. Vehicles & Dual Controls</h4>
+                <p>Lessons and test hires are conducted in dual-control manual or automatic tuition vehicles. We reserve the right to withhold tuition or vehicle hire for a practical test if the instructor considers a pupil unfit or unprepared to drive safely.</p>
+
+                <h4 class="font-bold text-white text-base pt-2">4. Practical Test Day Hire</h4>
+                <p>Use of the vehicle for a practical driving test is subject to instructor approval and availability. Additional fees and terms apply for test escort packages across Greater London test centres.</p>
+            </div>
+            <div class="p-4 border-t border-slate-800 flex justify-end shrink-0">
+                <button onclick="closeModal('termsModal')" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl text-sm transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation & Formspree AJAX Scripts -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Modal Handler Functions
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking backdrop
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('backdrop-blur-sm')) {
+                e.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+    <!-- Formspree AJAX Library Initialization -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'mqpebbeq' });
+        formspree('initForm', { formElement: '#quick-form', formId: 'mqpebbeq' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
